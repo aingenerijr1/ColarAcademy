@@ -521,3 +521,35 @@ aside .story:hover {
     display: none;
   }
 }
+
+/*--Footer--*/
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #d5d5d5;
+  font-weight: 300;
+}
+
+#legal a {
+  margin: 0 2rem;
+}
+
+#legal a:hover {
+  text-decoration: line-through;
+}
+
+
+/*--Footer Breakpoint--*/
+
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    font-size: 0.85rem;
+  }
+}
