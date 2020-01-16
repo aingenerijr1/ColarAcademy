@@ -368,3 +368,90 @@ aside .story:hover {
     margin: 0.5rem 0;
   }
 }
+
+/*--Programs--*/
+
+#courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+#courses h2, #thesis h2{
+  padding: 2rem 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 2rem;
+  background-color: #f4f4f4;
+}
+
+.program a {
+  color: black;
+}
+
+.program:hover {
+  border-top: solid 5px blue;
+  transition: border-top 0.15s ease-out 200ms;
+}
+
+.program img {
+  width: 100%;
+}
+
+#courses h3 {
+  margin: 1rem 0;
+}
+
+.details {
+  padding: 1rem;
+  flex: 1 1;
+}
+
+.details h4 {
+  padding: 0.5rem 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.details p {
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  padding: .5rem 0 1.5rem 0;
+}
+
+
+/*--Programs Breakpoints--*/
+
+@media only screen and (max-width: 800px) {
+  .program {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  #courses h2 {
+    margin: 0 auto 2rem;
+  }
+  #courses {
+    padding-bottom: 1rem;
+  }
+  .program {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+  .program img, .program h4, .program p {
+    display: none;
+  }
+  #courses h3 {
+    margin: 0;
+  }
+}
